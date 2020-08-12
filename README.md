@@ -27,6 +27,7 @@ Sign up here: https://cloud.google.com/free
 You'll need to create a project and then create a service account (under IAM & Admin panel).
 
 To get started quickly, I recommend you give the service account he role Compute Engine > Compute Admin.
+
 Then, download a keyfile and move it to the root of your directory.
 
 You can read more about service accounts here: https://cloud.google.com/iam/docs/service-accounts
@@ -52,10 +53,11 @@ see the VM spinning up in the GCP console in your web browser
 
 ##### Notes
 
-1. The startup script found in ./startup.js can take up to 40 minutes to full run. This is due to opencv's
+1. The startup script found in ./startup.js can take up to 40 minutes to fully run. This is due to opencv's
    extremely lengthy install times. You can check the console logs (for the start up script) by clicking on the VM in GCP's browser console and clicking "serial port 1 (console)", under logging.
 
 2. If you'd like extended output to see what the VM is up to, append "-vv" to the end of line 22 in startup.js
 
 3. You can optionally create a GCP storage bucket on start up, by adding in:
    `gsutil mb -p $PROJECT_ID -c standard -l europe-west4 gs://<insert-your-awesome-bucket-name-here>`
+   The privileges for maniupulating GCP storage buckets are already in place.
