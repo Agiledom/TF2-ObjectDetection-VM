@@ -19,7 +19,7 @@ https://github.com/tensorflow/models/tree/master/research/object_detection
 
 ##### Step 1
 
-Ensure you have node.js installed on your machine and run the follow in your terminal:
+Ensure you have node.js installed on your machine and run the following in your terminal:
 
 `git clone https://github.com/Agiledom/TF2-ObjectDetection-VM.git`
 
