@@ -1,4 +1,4 @@
-#### GCP VM with Object Detection API V2
+### GCP VM with Object Detection API V2
 
 This tool helps you easily create a VM in Google's Cloud Platform that has Tensorflows Object Detection API V2
 pre-installed. One of the key advantages of using GCP for your TF2 models is the ability to run your training on TPU's
@@ -15,9 +15,15 @@ https://github.com/tensorflow/models/tree/master/research/object_detection
 4. Run `npm install`
 5. Run `npm run start`
 
-##### Detailed Instructions
+#### Detailed Instructions
 
-###### Step 1
+##### Step 1
+
+Ensure you have node.js installed on your machine and run the follow in your terminal:
+
+`git clone https://github.com/Agiledom/TF2-ObjectDetection-VM.git`
+
+##### Step 2
 
 Sign up with Google Compute Cloud (GCP). Upon joining you'll get \$300 in free credit, which is more than
 enough to play around with the API.
@@ -32,7 +38,7 @@ Then, download a keyfile and move it to the root of your directory.
 
 You can read more about service accounts here: https://cloud.google.com/iam/docs/service-accounts
 
-###### Step 2
+##### Step 3
 
 Create a file named .env in the root of your directory and add the following three variables to it:
 
@@ -40,18 +46,18 @@ Create a file named .env in the root of your directory and add the following thr
 2.  `KEY_FILENAME=./<insert-your-key-filename-here>`
 3.  `GOOGLE_SERVICE_ACCOUNT=<insert-your-google-service-account-email-here>`
 
-###### Step 3
+##### Step 4
 
 Run `npm install` to install the projects dependencies
 
-###### Step 4
+##### Step 5
 
 Run `npm start` to create your VM.
 
 If all has gone well, you should see a print out of the metadata for your VM in the console and you should
 see the VM spinning up in the GCP console in your web browser
 
-##### Notes
+#### Notes
 
 1. The startup script found in ./startup.js can take up to 40 minutes to fully run. This is due to opencv's
    extremely lengthy install times. You can check the console logs (for the start up script) by clicking on the VM in GCP's browser console and clicking "serial port 1 (console)", under logging.
