@@ -34,13 +34,13 @@ You'll need to create a project and then create a service account (under IAM & A
 
 To get started quickly, I recommend you give the service account he role Compute Engine > Compute Admin.
 
-Then, download a keyfile and move it to the root of your directory.
+Then, download a keyfile and move it to the root of of the projects directory.
 
 You can read more about service accounts here: https://cloud.google.com/iam/docs/service-accounts
 
 ##### Step 3
 
-Create a file named .env in the root of your directory and add the following three variables to it:
+Create a file named .env in the root of the projects directory and add the following three variables to it:
 
 1.  `PROJECT_ID=<insert-your-project-id-here`
 2.  `KEY_FILENAME=./<insert-your-key-filename-here>`
