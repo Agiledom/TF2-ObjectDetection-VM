@@ -1,0 +1,15 @@
+{
+  "name": "tf2-objectdetection-vm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/compute": "^2.1.0",
+    "dotenv": "^8.2.0"
+  }
+}
