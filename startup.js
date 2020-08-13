@@ -4,6 +4,9 @@ module.exports = {
     apt update
     apt install -y python3.7 python3.7-dev protobuf-compiler python3-pip
 
+    # upgrade pip
+    pip3 install --upgrade pip
+
     # install additional packages
     sudo pip3 install tensorflow
 
