@@ -2,7 +2,7 @@ module.exports = {
   startupScript: `
     #! /bin/bash
     apt update
-    apt install -y python3.8 python3.8-dev protobuf-compiler python3-pip
+    apt install -y python3.7 python3.7-dev protobuf-compiler python3-pip
 
     # install additional packages
     sudo pip3 install tensorflow

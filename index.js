@@ -29,7 +29,7 @@ const config = {
       deviceName: vmName,
       initializeParams: {
         sourceImage:
-          "projects/ubuntu-os-cloud/global/images/ubuntu-2004-focal-v20200729",
+          "projects/ubuntu-os-cloud/global/images/ubuntu-1804-bionic-v20200807",
         diskType:
           "projects/clarky-279622/zones/europe-west4-a/diskTypes/pd-standard",
         diskSizeGb: "50",
